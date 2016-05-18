@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <title>Poco Dulce</title>
+   <script type="text/javascript"> 
+        function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+        }
+
+        function display_ct() {
+        var strcount
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        tt=display_c();
+        }
+        </script>
+  
+  <style>
+    h1 {
+      text-align: center;
+      color: pink;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+    }
+	
+	.col-md-3{
+	  padding-top:30px;
+	  padding-left:50px;
+	  padding-bottom:50px;
+	}
+	
+	.ProductName{
+	  border-radius: 5px;
+	  background-color:#4d93ff;
+	  color:white;
+	  text-align: center;
+	  font-size:22px;
+	  font-family: "Georgia",serif;
+	  length:300px;
+	  width:230px;
+	  height:80px;
+	  padding: 10px 10px 10px 10px;
+	  cursor:pointer;
+	}
+	
+	.page-header{
+	  text-align:center;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+	}
+    
+    p {
+    margin-left: 250px;
+    margin-right: 250px;
+	}
+  </style>
+  
+         
+</head>
+
+<body onload=display_ct();>
+
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <!--beginning of container-fluid (navigating bar) div-->
+  <h1> PocoDolce Confections </h1>
+  <br/>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">PocoDolce</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="chocolates.html">Chocolates</a></li>
+              <li><a href="bio.html">About Us</a></li>
+              <li><a href="Feedbackpage.html">Feedback</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+			  <li><a href="references.html">References</a></li>
+        </ul>
+	</div>
+  </div><!--the end of containter-fluid (navigating bar) div-->
+  <br/>
+  <br/>
+  <br/>
+  </nav>
+<center>
+<span id='ct' ></span>
+
+<h2> CHOCOLATES & CONFECTIONS HAND-CRAFTED IN SAN FRANCISCO</h2>
+<p>Poco Dolce Confections was started by Kathy Wiley in 2003 as a small San Francisco baking company 
+specializing in regional Italian pastries.  Within a year, she discovered a passion for creating hand-made
+chocolates with unique and exciting flavors. Having a predilection for more savory foods, Kathy experimented
+by finishing a piece of bittersweet chocolate with a sprinkling of Grey Sea Salt (also known as Sel Gris). 
+Poco Dolce's bittersweet chocolate Tiles were born.
+The name - Poco Dolce - literally translates from Italian as "not too sweet" or "just a little sweet."  
+Applying this idea to their products, Poco Dolce's ongoing mission is to stay on the "savory side of sweet."
+</p>
+<br/>
+<img src="/HomeImg1.jpg">
+<br/>
+<br/>
+<h2>SIMPLE, FRESH, ALL-NATURAL INGREDIENTS</h2>
+<p>Run by a ten person team for most of the year, the utmost attention and care is put into crafting each 
+and every product.  Created in small batches in their San Francisco kitchen, Poco Dolce's hand-made chocolates
+and confections feature only the finest, all-natural ingredients - from local almonds and pumpkin seeds to 
+grey sea salt harvested from the coast of Brittany.  Poco Dolce's signature Sea Salt Toffee has just three 
+ingredients - sugar, California butter, and sea salt.  The completely dairy-free line of Bittersweet Chocolate
+Bars continues to feature quality ingredients by using inclusions like peanut butter and California olive oil. 
+As of Dec, 2013, Poco Dolce no longer uses corn syrup in any products. 95% of Poco Dolce's products are 
+GMO-Free and gluten-free. (The exceptions are the St Paddy's Day Box, Whiskey Box, and Trento Box, which all
+contain some gluten.)</p>
+<br/>
+<h2>ENVIRONMENTALLY AND SOCIALLY CONSCIOUS CHOCOLATE</h2>
+<p>Poco Dolce always uses multiple blends of GMO-Free chocolate from Guittard Chocolate Company. Located 
+just 15 miles south of San Francisco in Burlingame, California, Guittard makes it a point to work directly
+with their farmers, cutting out the "middle men," and using cacao beans that are Rainforest Alliance certified
+and Fair Trade certified. They also pay a premium well over market value for the beans in order to support 
+the farmers they work with, and are a member of the World Cocoa Foundation which, among many other causes, 
+supports the Cocoa Livelihoods Program which works towards ensuring quality of life for workers through 
+sustainable cacao growing.</p>
+<br/>
+<br>
+	<div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '480',
+          width: '640',
+          videoId: 'u4EVh3kCvvM',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.cueVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+
+</center>
+  </body>
+  </html>

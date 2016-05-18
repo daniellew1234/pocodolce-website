@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <title>Poco Dulce</title> 
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(37.759002, -122.388102),
+    zoom:20,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  <style>
+    h1 {
+      text-align: center;
+      color: pink;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+    }
+	
+	hr {height: 2px;
+	background-color: grey;
+	color: grey;
+	}
+	
+	.col-md-3{
+	  padding-top:30px;
+	  padding-left:50px;
+	  padding-bottom:50px;
+	}
+	
+	.ProductName{
+	  border-radius: 5px;
+	  background-color:#4d93ff;
+	  color:white;
+	  text-align: center;
+	  font-size:22px;
+	  font-family: "Georgia",serif;
+	  length:300px;
+	  width:230px;
+	  height:80px;
+	  padding: 10px 10px 10px 10px;
+	  cursor:pointer;
+	}
+	
+	.page-header{
+	  text-align:center;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+	}
+	body{
+     padding-bottom:50px;
+    }
+      p {
+  	margin-left: 100px;
+    margin-right: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <!--beginning of container-fluid (navigating bar) div-->
+  <h1> PocoDolce Confections </h1>
+  <br/>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">PocoDolce</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="chocolates.html">Chocolates</a></li>
+              <li><a href="bio.html">About Us</a></li>
+              <li><a href="Feedbackpage.html">Feedback</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+			  <li><a href="references.html">References</a></li>
+        </ul>
+	</div>
+  </div><!--the end of containter-fluid (navigating bar) div-->
+  <br/>
+  <br/>
+  <br/>
+  </nav>
+<center>
+<h2>Contact Us</h2>
+<hr>
+<h3>Poco Dolce Confections<br/>
+2419 3rd Street<br/>
+San Francisco, CA 94107<br/>
+<br>
+Monday: 11:00am - 5:00pm<br/>
+Tuesday-Friday: 11:00am - 6:00pm<br/>
+Saturday: 12:00pm - 5:30pm<br/>
+<br>
+Call us at: (415) 817-1551
+</h3>
+<br>
+<br>
+<p>Poco Dolce's storefront is open to the public at our headquarters in San Francisco's Dogpatch.<br/>
+ This is where all the magic happens and where we make available the ultimate selection of our lines
+ and products straight from our production kitchen.<br/> Everything from recipe creation and production to
+ packaging and shipping happens at this location in order to ensure that the same care and quality is
+ put into every piece of chocolate you receive.</p>
+<br>
+<img src="storefront.jpg" alt="Store Picture">
+<br><br>
+<br><br>
+<h2>Directions</h2><br>
+<div id="googleMap" style="width:1200px;height:400px;"></div>
+<br><br>
+<br><br>
+<br><br>
+<h2>Follow Us</h2><br>
+<a href="https://www.facebook.com/pocodolce" target="_blank" title="Follow us on Facebook">
+  <img src="facebook-Logo.jpg" alt="Facebook">
+</a>
+<a href="https://twitter.com/PocoDolceSF" target="_blank" title="Follow us on Twitter">
+  <img src="twitterlogo.jpg" alt="Twitter">
+</a>
+<a href="http://www.pinterest.com/pocodolce/" target="_blank" title="Follow us on Pinterest">
+  <img src="pinterest.jpg" alt="Pinterest">
+</a>
+<a href="http://www.youtube.com/channel/UCHW2S2hcwGzoAkhQE9_p_0g" target="_blank" title="Follow us on Youtube">
+  <img src="youtubelogo.jpg" alt="Youtube">
+</a>
+<a href="http://instagram.com/pocodolcesf#" target="_blank" title="Follow us on Instagram">
+  <img src="instagramlogo.jpg" alt="Instagram">
+</a>
+</center>

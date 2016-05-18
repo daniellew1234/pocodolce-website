@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <title>Poco Dulce</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: pink;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+    }
+	
+	h2,h4{
+	  font-weight: Bold;
+	  padding-left:10px;
+	}
+	.FeedbackForm{
+	  width:70%;
+	  height:auto;
+	  padding:50px;
+	  border-radius: 25px;
+	  border: 5px double black;
+	}
+    input, select, radio, textarea,td{
+      font-size:16px;
+    }
+  </style>
+</head>
+
+<body>
+   
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <!--beginning of container-fluid (navigating bar) div-->
+  <h1> PocoDolce Confections </h1>
+  <br/>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">PocoDolce</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="chocolates.html">Chocolates</a></li>
+              <li><a href="bio.html">About Us</a></li>
+              <li><a href="Feedbackpage.html">Feedback</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+			  <li><a href="references.html">References</a></li>
+        </ul>
+	</div>
+  </div><!--the end of containter-fluid (navigating bar) div-->
+  <br/>
+  <br/>
+  <br/>
+  </nav>
+  <h2>Give us a feedback</h2>
+  <h4>As our customer, your feedback is very valuable to us. It helps us to improve ourselves and serves our customers better.
+      We are very thankful for your time and feedback. 
+  </h4>
+  <hr>
+  <center>
+  <div class="FeedbackForm">
+  <form method = "post" action = "feedback.php" >
+    <table>
+     <tr>
+      <td>Name</td>
+     <td>
+       <input type = "text" name = "name" placeholder="Enter name here"/>
+     </td>
+     </tr>
+     <tr>
+       <td>Product</td>
+       <td> 
+		<select name="product">
+         <option value="caramel">Burnt Caramel Toffee Squares</option>
+         <option value="espresso">Espresso Toffee Squares</option>
+         <option value="popcorn">Popcorn Toffee Squares</option>
+         <option value="seasalt">Sea Salt Toffee Squares</option>
+         <option value="chile">Super Chile Toffee Squares</option>
+         </select>
+       </td>
+	 </tr>
+	 <tr>
+       <td>Score</td>
+       <td>
+         <select name="score">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+         </select>
+       </td>
+     </tr>
+	 <tr>
+	   <td>Are you over 18?</td>
+	   <td>
+	     <input type="radio" name="over" Value="Yes"/>Yes
+		 <input type="radio" name="over" Value="No"/>No
+	   </td>
+	 </tr>
+	 <tr>
+       <td>Feedback</td>
+       <td>
+         <textarea row="25" cols="50" name="feedback" placeholder="Enter your feedback here"></textarea>
+       </td>
+     </tr>
+     <tr>
+       <td colspan = "2">
+                    <input type="submit" value="submit"/>
+       </td>
+     </tr>
+    </table>
+  </form>
+  </div>
+  </center>
+ </body>
+</html>

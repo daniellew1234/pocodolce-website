@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1">
+  <link rel="shortcut icon" type="imgage/x-icon" href="header_logo.png"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <title>PocoDulce</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: pink;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+    }
+	
+	.col-md-3{
+	  padding-top:30px;
+	  padding-left:50px;
+	  padding-bottom:50px;
+	}
+	
+	.ProductName{
+	  border-radius: 5px;
+	  background-color:#4d93ff;
+	  color:white;
+	  text-align: center;
+	  font-size:22px;
+	  font-family: "Georgia",serif;
+	  length:300px;
+	  width:230px;
+	  height:80px;
+	  padding: 10px 10px 10px 10px;
+	  cursor:pointer;
+	}
+	
+	.page-header{
+	  text-align:center;
+	  font-family: "Georgia",serif;
+	  font-weight: Bold;
+	}
+	
+  </style>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <!--beginning of container-fluid (navigating bar) div-->
+  <h1> PocoDolce Confections </h1>
+  <br/>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">PocoDolce</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="chocolates.html">Chocolates</a></li>
+              <li><a href="bio.html">About Us</a></li>
+              <li><a href="Feedbackpage.html">Feedback</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+			  <li><a href="references.html">References</a></li>
+        </ul>
+	</div>
+  </div><!--the end of containter-fluid (navigating bar) div-->
+  <br/>
+  <br/>
+  <br/>
+  </nav>
+	  <div class="page-header">
+	     <h2> &#9910 Welcome to our toffee selection &#9910 </h2>
+	  </div>
+	<div class="container">   
+      <div class="row">
+	    <!--1-->
+	    <div class="col-md-3">
+		    <img src="product1.jpg" class="img-thumbnail" alt="product 1" width="230" length="300">
+	          <div class="ProductName" data-toggle="modal" data-target="#myModal1">
+		        <p>Burnt Caramel Toffee Squares</p>
+			  </div>
+	    </div>
+	    <!--2-->
+ 	    <div class="col-md-3">
+			<img src="product2.jpg" class="img-thumbnail" alt="product 2" width="230" length="300">
+	        <div class="ProductName" data-toggle="modal" data-target="#myModal2">
+		        <p>Espresso Toffee Squares</p>
+			</div>
+	    </div>
+	    <!--3-->
+	    <div class="col-md-3">
+	        <img src="product3.jpg" class="img-thumbnail" alt="product 3" width="230" length="300">
+			<div class="ProductName" data-toggle="modal" data-target="#myModal3">
+		        <p>Popcorn Toffee Squares</p>
+			</div>
+	    </div>	 
+	    <!--4-->
+	    <div class="col-md-3">
+	        <img src="product4.jpg" class="img-thumbnail" alt="product 4" width="230" length="300">
+			<div class="ProductName" data-toggle="modal" data-target="#myModal4">
+		        <p>Sea Salt Toffee Squares</p>
+			</div>
+	    </div>	
+        <!--5-->
+	    <div class="col-md-3">
+	        <img src="product5.jpg" class="img-thumbnail" alt="product 5" width="230" length="300">
+			<div class="ProductName" data-toggle="modal" data-target="#myModal5">
+		        <p>Super Chile Toffee Squares</p>
+			</div>
+	    </div>
+	  </div>  
+    </div>
+<!-- Modal 1 -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Burnt Caramel Toffee Squares</h4>
+      </div>
+      <div class="modal-body">
+	    <div class="Picture side">
+		  <img class="img-responsive" src="product1.jpg" alt="Product 1">
+		</div>
+		<div class="desc. side">
+		  <h4>Description</h4>
+		  <p>For the toffee lover - these Toffee Squares start with our signature Burnt Caramel Toffee, 
+		  which is hand-cut into bite-sized pieces then lightly enrobed in bittersweet chocolate. 
+		  Whether you think it tastes like the top of a Crème brûlée or the outside of a toasted marshmallow, 
+		  they're the perfect quick indulgence to brighten your day. </p>
+		</div>
+		<h4>Price: $18.00</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 2 -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Espresso Toffee Squares</h4>
+      </div>
+      <div class="modal-body">
+        <div class="Picture side">
+		  <img class="img-responsive" src="product2.jpg" alt="Product 2">
+		</div>
+		<div class="desc. side">
+		<h4>Description</h4>
+		  <p>Our 2009 SFA Silver sofi™ Award-Winning Toffee Squares are sure to provide a little pick me up! 
+		  We cold-brew our coffee in-house, infuse it into our bite-sized toffee, and cover everything in dark chocolate. 
+		  An excellent pairing to whiskey or scotch for an instant Irish Coffee flavor!</p>
+		</div>
+		<h4>Price: $18.00</h4>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 3 -->
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Popcorn Toffee Squares</h4>
+      </div>
+      <div class="modal-body">
+        <div class="Picture side">
+		  <img class="img-responsive" src="product3.jpg" alt="Product 3">
+		</div>
+		<div class="desc. side">
+		<h4>Description</h4>
+		  <p>2014 Gold sofi™ Award Winner for Outstanding Chocolate! Featuring freshly-popped popcorn folded into buttery toffee, 
+		  this bite-sized treat is lightly enrobed in Bittersweet Chocolate to create the perfect snack or dessert. 
+		  A tricky treat to create, but definitely worth the effort. 
+		  A staff favorite!</p>
+		</div>
+		<h4>Price: $18.00</h4>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 4 -->
+<div id="myModal4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sea Salt Toffee Squares</h4>
+      </div>
+      <div class="modal-body">
+        <div class="Picture side">
+		  <img class="img-responsive" src="product4.jpg" alt="Product 4">
+		</div>
+		<div class="desc. side">
+		<h4>Description</h4>
+		  <p>These bite-sized, dark chocolate-covered squares of hand-made and hand-cut sea salt toffee are the most popular Toffee Square for a reason. 
+		  Our delicious and buttery toffee, crafted with a hint of salt, is the perfect indulgence to be covered in a smooth bittersweet chocolate.
+		  A great gift or snack for every occasion.</p>
+		</div>
+		<h4>Price: $18.00</h4>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 5 -->
+<div id="myModal5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Super Chile Toffee Squares</h4>
+      </div>
+      <div class="modal-body">
+        <div class="Picture side">
+		  <img class="img-responsive" src="product5.jpg" alt="Product 5">
+		</div>
+		<div class="desc. side">
+		<h4>Description</h4>
+		  <p>Our 2011 Scovie™ Grand Prize Award Winner! This one has a sweet heat with an extra pinch of chiles! 
+		  The combination of two different types of ground chiles infused into our signature toffee is what 
+		  produces the Super Chile's award-winning heat that features
+		  a delayed "kick" once you get through the layer of dark chocolate. 
+		  As with all our Toffee Squares, each bite-sized piece is cut by hand and enrobed in bittersweet chocolate.</p>
+		</div>
+		<h4>Price: $18.00</h4>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+
+</html>

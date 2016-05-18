@@ -1,0 +1,42 @@
+h1 {
+   text-align: center;
+   color: pink;
+ font-family: "Georgia",serif;
+ font-weight: Bold;
+ }
+
+.col-md-3{
+ padding-top:30px;
+ padding-left:50px;
+ padding-bottom:50px;
+}
+
+.ProductName{
+ border-radius: 5px;
+ background-color:#4d93ff;
+ color:white;
+ text-align: center;
+ font-size:22px;
+ font-family: "Georgia",serif;
+ length:300px;
+ width:230px;
+ height:80px;
+ padding: 10px 10px 10px 10px;
+ cursor:pointer;
+}
+
+.page-header{
+ text-align:center;
+ font-family: "Georgia",serif;
+ font-weight: Bold;
+}
+
+
+.navbar {
+ position:absolute;
+ width:100%;
+ z-index:10;
+}
+.inner-item {
+ text-align: center;
+}
